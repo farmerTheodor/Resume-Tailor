@@ -66,5 +66,3 @@ Despite having tried all of these, I still felt compelled to build out the Resum
 ## Limitations
 - Currently only works with LaTeX resumes
 - Currently requires an Open Router key
-- Has tendency to hallucinate when 
-- Will not produce a PDF every now and then. This is partially due to LLMs being LLMs. However there should be a solution to probably lower the error rate.
