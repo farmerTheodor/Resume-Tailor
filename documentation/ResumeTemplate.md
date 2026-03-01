@@ -124,6 +124,7 @@ This prompt will generate the two necessary files as mentioned above. Replace `<
 Create two files for me to use:
 ## File 1 (template.tex): 
 Convert this input LaTeX resume into a Jinja template. 
+For each item that can be removed ensure that it handles the case where the item does not exist.
 Call this file template.tex
 
 ## File 2 (required_fields.py):

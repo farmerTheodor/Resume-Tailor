@@ -44,7 +44,7 @@ class EducationItem(BaseModel):
 
 
 class ExperienceItem(BaseModel):
-    role: str = Field(..., description="The job title held.")
+    role: str = Field(..., description="A singular job title for this company.")
     company: str = Field(
         ...,
         description="The name of the company or organization.",

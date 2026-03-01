@@ -125,12 +125,14 @@
   <% for job in experience %>
     \resumeSubheading
       {<< job.role >>}{<< job.dates >>}
-      {<< job.company >>}{<< job.location >>}
-      \resumeItemListStart
-      <% for bullet in job.bullets %>
-        \resumeItem{<< bullet.value >>}
-      <% endfor %>
-      \resumeItemListEnd
+        {<< job.company >>}{<< job.location >>}
+        <% if job.bullets|length > 0 %>
+          \resumeItemListStart
+          <% for bullet in job.bullets %>
+            \resumeItem{<< bullet.value >>}
+          <% endfor %>
+          \resumeItemListEnd
+        <% endif %>
   <% endfor %>
   \resumeSubHeadingListEnd
 
@@ -140,11 +142,13 @@
     <% for proj in projects %>
       \resumeProjectHeading
           {\textbf{<< proj.title >>} $|$ \emph{<< proj.technologies >>}}{<< proj.dates >>}
-          \resumeItemListStart
-          <% for bullet in proj.bullets %>
-            \resumeItem{<< bullet.value >>}
-          <% endfor %>
-          \resumeItemListEnd
+          <% if proj.bullets|length > 0 %>
+            \resumeItemListStart
+            <% for bullet in proj.bullets %>
+              \resumeItem{<< bullet.value >>}
+            <% endfor %>
+            \resumeItemListEnd
+          <% endif %>
     <% endfor %>
     \resumeSubHeadingListEnd
 
