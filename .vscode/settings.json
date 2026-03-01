@@ -1,0 +1,13 @@
+{
+    "python.defaultInterpreterPath": "/usr/local/bin/python3",
+    "python.testing.pytestArgs": [
+        "test"
+    ],
+    "python.testing.unittestEnabled": false,
+    "python.testing.pytestEnabled": true,
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.black-formatter"
+    },
+    "files.eol": "\n",
+    "editor.formatOnSave": true,
+}

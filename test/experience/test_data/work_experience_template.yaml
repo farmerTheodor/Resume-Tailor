@@ -1,0 +1,18 @@
+company: "Tech Solutions Inc."
+list_of_titles:
+  - "title_1"
+  - "title_2"
+  - "title_3" 
+city: "Vancouver"
+province: "British Columbia"
+start_date: 
+  year: "2020"
+  month: "June"
+# If currently employed, do not use an end_date field
+end_date:
+  year: "2023"
+  month: "August"
+list_of_work_experience:
+  - description: "work-experience-1"
+  - description: "work-experience-2"  
+  - description: "work-experience-3"

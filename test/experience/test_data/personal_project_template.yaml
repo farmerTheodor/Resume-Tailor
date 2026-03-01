@@ -1,0 +1,5 @@
+name: "your-project-name"
+list_of_project_descriptions:
+  - description: "project-description-1"
+  - description: "project-description-2"
+  - description: "project-description-3"

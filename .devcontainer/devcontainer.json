@@ -1,0 +1,28 @@
+{
+	"name": "Resume-Tailor",
+	"context": "..",
+	"dockerFile": "./Dockerfile",
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"donjayamanne.python-extension-pack",
+				"charliermarsh.ruff",
+				"ms-python.black-formatter",
+				"James-Yu.latex-workshop",
+				"hediet.vscode-drawio"
+			]
+		}
+	},
+	"workspaceFolder": "/workspace",
+	"workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind",
+	"remoteUser": "root",
+	"containerEnv": {
+		"PORT": "8080",
+		"APP_PATH": "${containerWorkspaceFolder}",
+		"SHELL": "/bin/bash"
+	},
+	"runArgs": [
+		"--env-file",
+		".env"
+	],
+}

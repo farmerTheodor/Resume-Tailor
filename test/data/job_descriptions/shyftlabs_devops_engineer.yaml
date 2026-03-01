@@ -1,0 +1,56 @@
+job_title: DevOps Engineer
+location: Noida Uttar Pradesh, India
+company: Shyftlabs
+description: |
+  We are looking for Devops Engineer to join our team. This role partners with application development teams to automate and streamline application deployment, ensuring high availability, performance, and reliability across development, QA, and production environments. The position focuses on cloud infrastructure optimization, monitoring, troubleshooting, and implementing best practices to improve scalability, efficiency, and system uptime.
+
+
+  ShyftLabs is a growing data product company that was founded in early 2020 and works primarily with Fortune 500 companies. We deliver digital solutions built to help accelerate the growth of businesses in various industries, by focusing on creating value through innovation.
+
+
+  We are looking for Devops Engineer to join our team. This role partners with application development teams to automate and streamline application deployment, ensuring high availability, performance, and reliability across development, QA, and production environments. The position focuses on cloud infrastructure optimization, monitoring, troubleshooting, and implementing best practices to improve scalability, efficiency, and system uptime. ShyftLabs is a growing data product company that was founded in early 2020 and works primarily with Fortune 500 companies. We deliver digital solutions built to help accelerate the growth of businesses in various industries, by focusing on creating value through innovation.
+
+  Job Responsibilties :
+
+  Responsible for the development, optimization and delivery of cloud computing solutions, hosted services and underlying software infrastructure to optimize service delivery across production, QA and development environments through the development lifecycle
+  Supports and troubleshoots scalability, high availability, performance, monitoring, backup and restores of different environments
+  Evaluates new tools, technologies and processes to improve speed, efficiency and scalability.
+  Monitor server and application performance using one or more of Application Performance Monitoring tools: Datadog and CloudWatch.
+  Partners with application developers on the seamless deployment of software
+  Responsible for optimizing and enhancing infrastructure performance
+  Manage the installation and configuration of solutions
+  Oversee routine maintenance procedures and diagnostic testing.
+  Document processes and monitoring performance metrics.
+  Implement best practices in network administration and cybersecurity.
+
+
+  Basic Qualifications:
+
+  3+ years of professional experience in DevOps.
+  BS degree in Computer Science, Engineering or related IT field.
+  Experience in Information Security and Networking.
+  Background in Linux (RHEL) based infrastructure.
+  Comfortable with command line tools (Bash, PowerShell).
+  Hands-on experience with CI/CD tools (such as GitLab CI/CD, Azure DevOps – GitLab CI/CD preferred).
+  Experience with building dashboards, configuring and integrating with both infrastructure and application monitoring and alerting tools (such as AWS CloudWatch, Datadog) .
+  Extensive hands-on proficiency in Infrastructure configuration management and IAC methodologies and technologies (such as Terraform, CloudFormation, Chief, Puppet – Terraform preferred).
+  Proficiency in common DevOps development languages (such as Python, Node – Python preferred).
+  Experience on Automation platforms(Ansible).
+  Experience with serverless frameworks (Zappa, Serverless, Chalice).
+  Experience with building new Cloud systems that completely support microservice architectures (API Gateway, serverless compute, Redis, NoSQL DBs) as well as legacy client/server architecture (EC2, Docker, Load Balancers, databases). 
+  AWS experience preferred, and candidates with AWS Developer or AWS Solution Architect Associate certifications strongly preferred.
+  Familiar with security best practices and tools (AWS WAF, Cloudflare WAF).
+  Experience with Java build, packaging and dependency management and storage systems (such as Maven, Gradle, Artifactory)
+  Experience with integrating automated tests into CI/CD pipelines (such as Cucumber, Robot, Selenium, JMeter).
+  Experience with creating alerts, dashboards, canned queries – as well as configuring and integrating log aggregation (such as AWS CloudWatch, Datadog).
+  Experience with the containers and container management systems (such as Docker, Kubernetes, AWS Fargate/ECS).
+  Experience with the use of artifacts.
+  Experience with Deployment strategies.
+  Experience with Deployment tools ( Such as MS Intune, AWS Patch Manager – Tanium preferred) .
+  Experience with MS SQL, AWS Aurora PostgreSQL Serverless administration / optimization.
+  Familiar with Agile software development lifecycles.
+  Knowledge of best practices and IT operations for high availability and uptime.
+
+
+
+  We are proud to offer a competitive salary alongside a strong insurance package. We pride ourselves on the growth of our employees, offering extensive learning and development resources.

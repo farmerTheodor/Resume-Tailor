@@ -1,0 +1,61 @@
+job_title: Data Engineer
+location: Foster City, CA
+company: Zoox
+description: |
+  The Data team leverages data from our autonomous vehicles and operations to determine autonomy and service readiness. We provide the foundation for strategic decision-making at Zoox. You will develop and implement the next generation of our data pipeline to ensure visibility into our business as we scale toward the launch of an autonomous mobility service. You will define the system and build the pipeline to enable Zoox to develop and scale with a data-first culture.
+
+
+  You will join a diverse, experienced team with rapidly growing scope and responsibility while also having access to one of the most unique data sets in the autonomous vehicle industry. Hence, we are seeking all skill levels to grow with the team.
+
+
+  The Data team leverages data from our autonomous vehicles and operations to determine autonomy and service readiness. We provide the foundation for strategic decision-making at Zoox. You will develop and implement the next generation of our data pipeline to ensure visibility into our business as we scale toward the launch of an autonomous mobility service. You will define the system and build the pipeline to enable Zoox to develop and scale with a data-first culture. You will join a diverse, experienced team with rapidly growing scope and responsibility while also having access to one of the most unique data sets in the autonomous vehicle industry. Hence, we are seeking all skill levels to grow with the team.
+
+
+  Base Salary Range
+
+
+  There are three major components to compensation for this position: salary, Amazon Restricted Stock Units (RSUs), and Zoox Stock Appreciation Rights. A sign-on bonus may be offered as part of the compensation package. The listed range applies only to the base salary. Compensation will vary based on geographic location and level. Leveling, as well as positioning within a level, is determined by a range of factors, including, but not limited to, a candidate's relevant years of experience, domain knowledge, and interview performance. The salary range listed in this posting is representative of the range of levels Zoox is considering for this position.
+
+
+  Zoox also offers a comprehensive package of benefits, including paid time off (e.g. sick leave, vacation, bereavement), unpaid time off, Zoox Stock Appreciation Rights, Amazon RSUs, health insurance, long-term care insurance, long-term and short-term disability insurance, and life insurance.
+
+
+  In this role, you will:
+
+  Design, build, and maintain the infrastructure that transforms autonomous vehicle data at scale to support analytics throughout the company
+  Define and execute on how data from perception, prediction, planning and other parts of the autonomous stack is consumed to generate valuable insights by data scientists, engineers, and business users 
+  Establish robust data integrity monitoring so that company-wide metrics are based on accurate data
+  Partner with engineering and product teams to define data consumption patterns and establish best practices
+
+
+  Qualifications
+
+  BS/MS degree in a technical field
+  Experience designing and building complex data infrastructure at scale
+  Advanced Structure Query Language (SQL) and data warehousing experience
+  Experience operating a workflow manager such as Airflow
+  Experience with large scale streaming platforms (e.g. Kafka, Kinesis), processing frameworks (e.g. Spark, Hadoop) and storage engines (e.g. HDFS, HBase)
+
+
+  Bonus Qualifications
+
+  Exceptional Python or Scala skills
+  Basic fluency in C++
+  Familiarity with or exposure to experimentation platforms
+  A strong DataOps mindset and opinions on next-generation warehousing tools
+
+
+
+  About Zoox
+  Zoox is developing the first ground-up, fully autonomous vehicle fleet and the supporting ecosystem required to bring this technology to market. Sitting at the intersection of robotics, machine learning, and design, Zoox aims to provide the next generation of mobility-as-a-service in urban environments. We’re looking for top talent that shares our passion and wants to be part of a fast-moving and highly execution-oriented team.
+
+
+  Follow us on LinkedIn
+
+
+  Accommodations
+  If you need an accommodation to participate in the application or interview process please reach out to accommodations@zoox.com or your assigned recruiter.
+
+
+  A Final Note:
+  You do not need to match every listed expectation to apply for this position. Here at Zoox, we know that diverse perspectives foster the innovation we need to be successful, and we are committed to building a team that encompasses a variety of backgrounds, experiences, and skills.

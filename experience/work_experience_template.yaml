@@ -1,0 +1,110 @@
+company: "Toast Solutions Inc."
+list_of_titles:
+  - "title_1"
+  - "Toast Master"
+  - "Toast Engineer" 
+city: "Toast"
+region: "North Carolina"
+start_date: "June 2020"
+# If currently employed, do not use an end_date field
+end_date: "August 2023"
+list_of_experiences:
+  - description: >
+      An optional description of the work experience at Toast Solutions Inc. Detailing responsibilities, achievements, and technologies used. Used for helping the llm tweak 
+      resume points and overall resume structure. Currently not used but can be used in the future to help create a cover letter.
+    technologies_used:
+      - "tech-1"
+      - "Toaster"
+      - "Bread Slicer"
+    list_of_resume_lines:
+      - template_resume_line: "Built out feature X which improved Y by Z%."
+        substitution_suggestions: []
+      - template_resume_line: "Led a team of N toast chefs in a Michelin star kitchen."
+        substitution_suggestions: []
+      - template_resume_line: "Pioneered the use of advocados on toast which increased customer satisfaction by 68%."
+        substitution_suggestions: [
+          "Can switch out advocados for any other popular toast topping, such as peanut butter, jam, or cream cheese.",
+        ]
+      - template_resume_line: "Implemented a new toasting algorithm which reduced toasting time by 23% while maintaining toast quality."
+        substitution_suggestions: []
+      - template_resume_line: "Optimized the bread slicing process which resulted in a 15% reduction in waste and a 10% increase in efficiency."
+        substitution_suggestions: []
+      - template_resume_line: "Collaborated with the marketing team to create a viral campaign around the new avocado toast, resulting in a 50% increase in sales."
+        substitution_suggestions: []
+      - template_resume_line: "Conducted research on the optimal toasting time for different types of bread, leading to the development of a new toasting guide that improved customer satisfaction by 20%."
+        substitution_suggestions: []
+      - template_resume_line: "Managed inventory and supplier relationships to ensure a consistent supply of high-quality bread, resulting in a 30% reduction in supply chain disruptions."
+        substitution_suggestions: []
+
+
+# Below is an example of a second experience at the same company. 
+  - description: >
+      Worked on the next generation of toasters, developing innovative features and improving the overall user experience. Collaborated with cross-functional teams to design and implement new technologies in the toaster industry.
+    technologies_used:
+      - "tech-2"
+      - "Toaster Pro"
+      - "Bread Slicer Deluxe"
+    list_of_resume_lines:
+    # Padding the list of resume lines so that I can test the llm's ability to keep the resume to one page.
+    - template_resume_line: "Mastered the art of avocado toast preparation, consistently delivering premium quality dishes that exceed customer expectations."
+      substitution_suggestions: []
+    - template_resume_line: "Demonstrated exceptional resilience and cost management skills, sourcing high-quality avocados within tight budget constraints."
+      substitution_suggestions: []
+    - template_resume_line: "Developed expertise across 15+ bread varieties, optimizing toasting profiles for sourdough, rye, whole wheat, and artisan loaves."
+      substitution_suggestions: []
+    - template_resume_line: "Maintained strict no-crust-removal policy, educating customers on the nutritional and structural benefits of whole-toast consumption."
+      substitution_suggestions: []
+    - template_resume_line: "Achieved a 98% customer satisfaction rating through consistent adherence to premium toasting standards and quality control processes."
+      substitution_suggestions: []
+    - template_resume_line: "Spearheaded a bread variety expansion initiative, introducing 8 new artisan bread options that increased menu diversity by 40%."
+      substitution_suggestions: []
+    - template_resume_line: "Built and maintained relationships with local avocado suppliers, ensuring consistent quality while reducing procurement costs by 18%."
+      substitution_suggestions: []
+    - template_resume_line: "Developed a comprehensive spread pairing guide covering 20+ options, improving upsell revenue by 25%."
+      substitution_suggestions: [
+        "Can substitute spread pairing guide for any other menu development initiative.",
+      ]
+    - template_resume_line: "Trained a team of 5 junior toast chefs in advanced avocado preparation techniques, reducing preparation time by 30%."
+      substitution_suggestions: []
+    - template_resume_line: "Engineered a precision toasting calibration system that reduced burnt toast incidents by 95% across all bread types."
+      substitution_suggestions: []
+    - template_resume_line: "Implemented a seasonal avocado sourcing strategy that maintained ingredient availability year-round while cutting costs by 22%."
+      substitution_suggestions: []
+    - template_resume_line: "Authored the official toasting standards handbook, which was adopted company-wide and reduced quality inconsistencies by 45%."
+      substitution_suggestions: []
+    - template_resume_line: "Designed a bread freshness tracking system that reduced stale bread waste by 35% and improved overall ingredient utilization."
+      substitution_suggestions: []
+    - template_resume_line: "Pioneered a new avocado ripeness assessment protocol that ensured 100% of served avocados met premium quality standards."
+      substitution_suggestions: []
+    - template_resume_line: "Led cross-functional collaboration with kitchen staff to streamline toast production, increasing throughput by 40% during peak hours."
+      substitution_suggestions: []
+    - template_resume_line: "Introduced a customer feedback loop for toast quality, driving iterative improvements that boosted repeat customer rate by 28%."
+      substitution_suggestions: []
+    - template_resume_line: "Optimized avocado mashing techniques to achieve consistent texture profiles, reducing preparation variance by 60%."
+      substitution_suggestions: []
+    - template_resume_line: "Managed a daily production volume of 200+ avocado toast orders while maintaining zero compromises on quality standards."
+      substitution_suggestions: []
+    - template_resume_line: "Conducted competitive analysis of 10+ local toast establishments, identifying and implementing best practices that improved product ranking."
+      substitution_suggestions: []
+    - template_resume_line: "Developed a crust integrity preservation protocol that maintained structural toast quality across all bread varieties served."
+      substitution_suggestions: []
+    - template_resume_line: "Reduced kitchen overhead costs by 20% through strategic bulk purchasing of bread and avocados during peak harvest seasons."
+      substitution_suggestions: []
+    - template_resume_line: "Introduced advanced spread application techniques that enhanced flavor profiles and reduced ingredient waste by 15%."
+      substitution_suggestions: []
+    - template_resume_line: "Diagnosed and resolved toaster calibration issues in real-time, achieving 99.9% uptime across all toasting equipment."
+      substitution_suggestions: []
+    - template_resume_line: "Championed a zero-waste initiative in the toast kitchen, repurposing bread offcuts into croutons and reducing daily waste by 50%."
+      substitution_suggestions: []
+    - template_resume_line: "Collaborated with nutritionists to develop a health-focused avocado toast menu that attracted a 35% increase in health-conscious customers."
+      substitution_suggestions: []
+    - template_resume_line: "Established quality benchmarks for avocado toast presentation, achieving consistent plating standards across a team of 10 chefs."
+      substitution_suggestions: []
+    - template_resume_line: "Negotiated long-term contracts with 3 premium bread suppliers, securing a 12% cost reduction while improving delivery reliability."
+      substitution_suggestions: []
+    - template_resume_line: "Drove a 60% improvement in toast production speed by redesigning kitchen workflow and optimizing equipment placement."
+      substitution_suggestions: []
+    - template_resume_line: "Maintained comprehensive knowledge of 30+ spreads, leveraging expertise to create unique flavor combinations that became top-selling menu items."
+      substitution_suggestions: []
+    - template_resume_line: "Sustained high-quality toast production under financially constrained conditions, demonstrating adaptability and commitment to excellence despite limited resources."
+      substitution_suggestions: []

@@ -1,0 +1,36 @@
+name: "your-name"
+# an open dict for additional personal information. You can add any key value pair that you want here.
+reachout_points:
+  address: "your-address"
+  phone: "your-phone-number"
+  email: "your-email-address"
+  linkedin: "your-linkedin-profile"
+  github: "your-github-username"
+
+# If you have no education, set this to an empty list: []
+list_of_education:
+  - degree: "your-degree"
+    level: "your-level"
+    institution: "your-institution"
+    graduation_date: "your-graduation-date"
+    location: "your-location"
+  - degree: "Toaster Science"
+    level: "PhD"
+    institution: "Toast Academy"
+    graduation_date: "May 1992"
+    location: "Toast, North Carolina"
+
+# If you have no certifications, set this to an empty list: []
+list_of_certifications:
+  - certification_name: "your-certification-name"
+    year_obtained: "year-obtained"
+    month_obtained: "month-obtained"
+  - certification_name: "Toastmaster Competent Toaster Certification" 
+    year_obtained: "1998"
+    month_obtained: "March"
+
+list_of_skills:
+  - "your-languages-1"
+  - "Toaster Oven"
+  - "Butter Knife"
+  - "Crumb Sweeper"

@@ -1,0 +1,71 @@
+job_title: Data Engineer
+location: Remote - United States
+company: Diverge Health
+description: |
+  At Diverge Health we are passionate about improving health access and outcomes for those most in need. We partner with primary care providers to improve the engagement and management of their Medicaid patients, offering independent practices with specialized resources and clinical programs to close gaps in care. Our teams work to address medical, social and behavioral patient needs, lowering healthcare costs and improving patient lives. Guided by our core values of humility, continuous learning and feeling the weight, our team is on a mission to strengthen communities from within, unlocking people's ability to live their healthiest lives.  
+
+   We are looking for a Data Engineer to join our team! Reporting to the Data Engineering Manager, the Data Engineer will be passionate about our mission to support those who need help most in our healthcare system.  This role will be part of our Data Engineering team and work closely with other technical leaders on the team including data engineering, data science, and application development to help design and optimize our data architectures.   
+
+  Who We Are:   
+
+  We are a team of entrepreneurs passionate about improving health access and outcomes for those most in need. We partner with primary care providers to improve the engagement and management of their Medicaid patients, providing independent practices with access to specialized resources and clinical programs to address medical, social, and behavioral patient needs. Our care ecosystem is equipped with enhanced technology and data interfaces to enable provider and patient success in a value-based environment. Guided by our core values of humility, continuous learning and feeling the weight, our team is on a mission to strengthen communities from within, unlocking people's ability to live their healthiest lives.   
+
+    
+
+  Our technology organization is a small, growing team of problem solvers committed to improving healthcare outcomes for disadvantaged populations.  Our fully remote workforce strives to be…  
+
+  Innovative – We love creative problem solvers capable of outside the box solutioning, and who work hard to find simple solutions to hard problems.  
+  Independent – We take ownership of problems and have pride in our solutions, while working independently and supporting each other’s efforts.  
+  Adaptive – As a small team, we all lean across the breadth of our technologies and love to learn new technologies and dive into new areas - and to figure things out as we go.  
+
+    
+
+  What We Do:   
+
+  We create and execute our technology enablement efforts – from software development to data/analytics, to infrastructure, and enterprise technologies. We work collaboratively across internal stakeholders to understand business problems and needs, and design & implement solutions that support our mission of providing effective and transformative patient-centered care.   
+
+  We work on an ever-expanding set of technology platforms and are always seeking the simplest, most cost-effective way to solve problems.  We build solutions leveraging back-end services and databases (Snowflake SQL ), data integrations and data warehouses (leveraging such tools as DBT, Hightouch & Dagster), healthcare analytics (across Snowflake data stores, Sigma reporting, cloud data and analytics services), and more, all deployed across automated, serverless infrastructures wherever possible.    
+
+    
+
+  How You Can Help Us:   
+
+  Here are some key areas where we’re looking to make our team stronger:   
+
+  Experience building, optimizing, and maintaining data pipelines – in particular, data pipeline development and maintenance with Python, Snowflake SQL, and DBT. Strong examples of automating data flows and optimizing performance and reliability will demonstrate this experience, regardless of technology choices. Experience with Salesforce is a plus! 
+  Data orchestration experience – practical experience in using data or workflow orchestration tools (such as Dagster, Prefect, Airflow, etc) to manage and schedule data workflows. Examples designing automated workflows that ensure data quality, reliability, handling failures, and monitoring data pipeline performance to support timely and accurate data delivery will demonstrate this experience.  
+  Strong knowledge of common medical formats – hands on experience in integration with claims, EHRs and CRMs into data warehouses and operational systems. An understanding of claims consolidation, ICD, CPT and NDC codes are preferred as well as experience with front-end patient lookup software.  
+  Problem-solving and optimization in data engineering – an ability to look at existing data flows, identify bottlenecks, and optimize performance and cost efficiency, when necessary.  Provide some examples of how you’ve done this in the past.   
+  Adaptability and eagerness to learn – excitement about learning new tools and technologies (e.g., new cloud platforms, additional ETL tools, or advanced orchestration methods). Give us samples on mastering new skills and applying them to improve data processes or pipelines.  
+  Proven experience in complex healthcare environments – we’re looking for someone who has proven themselves in multiple environments – and with healthcare data specifically.   This could be demonstrated with 7+ years of experience in data engineering and 7+ years of experience in healthcare, or by providing examples of handling the intricacies of healthcare data in highly complex environments.    
+  Leadership, collaboration and communication within and across functional teams – work closely with data scientists, analysts, engineers, and business stakeholders to understand data needs and implement data solutions and lead a team in implementing cross-functional engineering projects simultaneously.   Showcasing your cross-team collaboration and leadership to solve real business problems would demonstrate this experience.  
+  Focus on reliable and scalable solutions – design and implement data pipelines that are not only functional but also scalable and maintainable. Examples of ensuring data integrity, handling data failures gracefully, and creating monitoring and alerting mechanisms are important for this role.  
+
+    
+
+  And as potential bonus areas, we’re also interested to hear more about   
+
+  Knowledge of some of our specific tools — Salesforce, Hightouch, Sigma—but it’s not a hard requirement.   
+  Abilities and experience with other languages and technology stacks – Python, Hadoop, Glue, etc. – no one tool solves every task, so having a bigger toolbelt is always a plus!  
+  Teamwork, leadership, mentorship, and history helping teams and teammates grow and get stronger – being able to lift a coworker shows a commitment to more than oneself.    
+  Start-up or small company experience – start-ups have no silos or boundaries like larger companies might, so showing how you’ve been in such an environment before helps prove that you can do it again.    
+
+    
+
+  This is a full-time, exempt, salaried position. Commensurate on candidate experience, the expected base salary range for this role is $145,000-$155,000. 
+
+  At this time, we are unable to support hiring in Alaska and Hawaii due to our primary operations being based in the Eastern and Central time zones. 
+
+  Our Investors
+
+  Diverge Health is funded by GV and incubated by Triple Aim Partners, which since 2019 has partnered with entrepreneurs to co-found and launch eight companies focused on improving the quality, experience and total cost of healthcare.
+
+  At Diverge Health we believe that a diverse set of backgrounds and experiences enrich our teams and enable us to realize our mission. If you do not have experience in all areas detailed above, we encourage you to share your unique background with us and how it might be additive to our team.
+
+  Special Considerations 
+
+  Diverge Health is dedicated to the principles of Diversity, Equity and Inclusion and Equal Employment Opportunities for all employees and applicants for employment. We do not discriminate on the basis of race, color, religion, age, sex, national origin, disability status, genetics, protected veteran status, sexual orientation, gender identity or expression, reproductive health decisions, family responsibilities or any other characteristic protected by the federal, state or local laws. Our decision to hire, promote, discipline, or discharge, will be based on merit, competence, performance and business needs.
+
+   At this time, we are unable to support hiring in Alaska and Hawaii due to our primary operations being based in the Eastern and Central time zones.
+
+   

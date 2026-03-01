@@ -1,0 +1,23 @@
+name: "your-name"
+# an open dict for additional personal information
+reachout_points:
+  address: "your-address"
+  phone: "your-phone-number"
+  email: "your-email-address"
+  linkedin: "your-linkedin-profile"
+  github: "your-github-username"
+
+list_of_education:
+  - degree: "your-degree"
+    institution: "your-institution"
+    graduation_year: "your-graduation-year"
+
+list_of_certifications:
+  - certification_name: "your-certification-name"
+    date_obtained: 
+      year: "year-obtained"
+      month: "month-obtained"
+  - certification_name: "your-certification-name-2"
+    date_obtained: 
+      year: "year-obtained-2"
+      month: "month-obtained-2"

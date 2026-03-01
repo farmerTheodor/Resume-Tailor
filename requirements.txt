@@ -1,0 +1,6 @@
+pydantic
+pyyaml
+Jinja2
+httpx
+textual
+PyMuPDF
