@@ -1,0 +1,26 @@
+project_name: "your-project-name"
+date_last_worked_on: "aug 2021"
+description: >
+  An optional description of the personal project. Detailing achievements, and technologies used. Used for helping the llm tweak 
+  resume points and overall resume structure. Currently not used but can be used in the future to help create a cover letter.
+technologies_used:
+  - "tech-1"
+  - "Toaster"
+  - "Bread Slicer"
+list_of_resume_lines:
+  - template_resume_line: "Line about what you did in the project and the impact it had. This is what the llm will tweak to tailor your resume."
+    substitution_suggestions: []
+  - template_resume_line: "Researched novel toaster techniques including the sideways toast method which improved toasting efficiency by 23% compared to conventional methods."
+    substitution_suggestions: []
+  - template_resume_line: "Took part of the Great British Toast Off of 2021 and placed first out of 12 contestants."
+    substitution_suggestions: []
+  - template_resume_line: "Presented research on the sideways toast method at the International Conference on Toaster Research in 2022."
+    substitution_suggestions: []
+  - template_resume_line: "Published a paper on the sideways toast method in the Journal of Toaster Science in 2023."
+    substitution_suggestions: []
+  - template_resume_line: "Created the first PID controlled toaster for each side of the bread. Allowing for precise control of the toasting process and improved toast quality."
+    substitution_suggestions: []
+  - template_resume_line: "Developed a machine learning model to predict the optimal toasting time for different types of bread, resulting in a 15% reduction in over-toasting."
+    substitution_suggestions: []
+  - template_resume_line: "Collaborated with a team of 5 researchers to develop a new type of toaster that uses infrared technology to toast bread more evenly."
+    substitution_suggestions: []
