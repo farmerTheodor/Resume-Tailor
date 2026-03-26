@@ -63,6 +63,7 @@ DEFAULT_PROMPT = """
 - Use data from the Experience List to fill out the output format. If the output format requires something that is not in the experience list, 
   at best leave it blank. Do not fabricate any information that is not in the experience list. ex. if the output format has a field for "dates" which requires a start and an end date, but the 
   experience list only has a start date, then put the start date and leave the end date blank. Do not make up an end date.
+- Select a lot more experience than you think is necessary to fill out the output format.
 - Keep in mind that the experience you select should be ranked in order of relevance to the job description. So the most relevant experience should be at the top of the list.
 - Experience that is listed as together should be kept together. Do not break up experience that is listed as together in the experience list.
 - You can use the substitution suggestions to tweak the resume lines to better fit the job description. But do not make any tweaks that are not in the substitution suggestions. 

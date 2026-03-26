@@ -58,7 +58,6 @@ def remove_experience(experience, experience_to_remove) -> None:
 def _is_removable_experience(experience) -> bool:
     return (
         isinstance(experience, BaseModel)
-        and len(type(experience).model_fields.items()) == 2
         and type(experience).model_fields.get("rank", False)
         and type(experience).model_fields.get("value", False)
     )

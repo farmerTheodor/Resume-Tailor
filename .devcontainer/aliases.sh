@@ -45,7 +45,9 @@ function compile_latex_file {
     fi
 
     # Compile the LaTeX file
-    pdflatex -output-directory="$sharable_resumes_filepath" "$filename" 
+    # cd into the .tex file's directory first to satisfy TeX's paranoid openout_any security setting,
+    # which only allows writing to subdirectories of the current working directory.
+    (cd "$(dirname "$filename")" && pdflatex -interaction=nonstopmode -output-directory="$sharable_resumes_filepath" "$(basename "$filename")")
     
     # Delete build artifacts
     rm "$sharable_resumes_filepath"/*.aux "$sharable_resumes_filepath"/*.log "$sharable_resumes_filepath"/*.out
