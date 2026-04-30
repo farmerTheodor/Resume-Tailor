@@ -66,7 +66,7 @@ end_date: "your-end-date"
 # You can have multiple experiences in a single company. Think about all the projects the company had you do.
 list_of_experiences:
     - description: >
-            An optional description of your work experience. Detailing responsibilities, achievements, and technologies used. Currently not used but can be used in the future to help create a cover letter.
+            An optional description of your work experience. Detailing responsibilities, achievements, and technologies used. Not included in the experience selection prompt but can be used for cover letter generation or other future enhancements.
         technologies_used:
             - "your-technology-1"
             - "your-technology-2"
@@ -82,7 +82,7 @@ list_of_experiences:
 project_name: "your-project-name"
 date_last_worked_on: "your-last-date"
 description: >
-  An optional description of the personal project. Detailing achievements, and technologies used. Used for helping the llm tweak resume points and overall resume structure. Currently not used but can be used in the future to help create a cover letter.
+  An optional description of the personal project. Detailing achievements, and technologies used. Used for helping the llm tweak resume points and overall resume structure. Not included in the experience selection prompt but can be used for cover letter generation or other future enhancements.
 technologies_used:
   - "tech-1"
 list_of_resume_lines:

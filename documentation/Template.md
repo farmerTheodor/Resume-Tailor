@@ -1,12 +1,25 @@
-# Resume Templates
-In the Resume Tailor, a resume template is a combination of two things:
+# Templates
+In the Resume Tailor, a template is a combination of two things:
 - Template: A [Jinja](https://github.com/pallets/jinja) template that can be used to create a PDF. 
 - Required Fields: The required data to fill out the template.
 
-Once you create those two items and place them in a new folder within `./resume_templates`, you have created a new resume template. 
+Once you create those two items and place them in a new folder within `./resume_templates`, you have created a new template. 
 
-## Supported Template Types
-**Latex** is currently the only resume template type that is supported. If you want to extend this code to support other types, look into editing the python files within the `src/resume_output` folder. Everything related to templating and compiling should all be contained within that folder.
+## Template Types
+There are two aspects to every template that define its type:
+
+### Output Format Types
+The output format type determines how the template is rendered and compiled. Currently supported:
+- **LaTeX**: Templates with `.tex` files that are compiled to PDF.
+
+If you want to extend this to support other output format types, look into editing the python files within the `src/template_output` folder. Everything related to templating and compiling should all be contained within that folder.
+
+### Content Types
+The content type determines what kind of document the template produces:
+- **Resume**: A resume template tailored to a specific job description.
+- **Cover Letter**: A cover letter template tailored to a specific job description.
+
+Each template folder can contain both a resume template and a cover letter template. The cover letter template is optional — if the required cover letter files are not found in the template folder, cover letter generation is skipped.
 
 ## Swapping Between Templates
 To swap between templates you must:
@@ -15,11 +28,11 @@ To swap between templates you must:
     - Example: `DEFAULT_TEMPLATE_PATH=/workspace/resume_templates/<your_template_here>`
 
 
-## Generating A New Resume Template
-Generating a new resume template can be fairly easy depending on how hands-on you want to be. If you want AI to do most of the work for you, I would suggest using the prompt at the bottom of this document. Regardless of whether you write it using AI or not, it is good to read the documentation.
+## Generating A New Template
+Generating a new template can be fairly easy depending on how hands-on you want to be. If you want AI to do most of the work for you, I would suggest using the prompt at the bottom of this document. Regardless of whether you write it using AI or not, it is good to read the documentation.
 
-### Required Files
-In order for a template to exist, there must be at least two files. These files must be called `template` and `required_fields` respectively. 
+### Required Files for a Resume Template
+In order for a resume template to exist, there must be at least two files. These files must be called `template` and `required_fields` respectively. 
 #### Template Files
 The template file will contain a Jinja template that the Resume Tailor can populate. This Jinja template can be structured however you see fit. However, there is a caveat for LaTeX files. LaTeX files share some of the same syntax as Jinja templates. Therefore, we have updated the Jinja templates to utilize this syntax instead.
 ```python
@@ -69,6 +82,19 @@ class RequiredFields(BaseModel):
 2. It contains a Pydantic model called `RequiredFields`.
 
 These are necessary as it is how the Resume Tailor can discover and dynamically load the data structure. It dynamically loads the `required_fields` Python file and then looks for a class called `RequiredFields`. If it cannot find either, it will error out. 
+
+### Optional Files for a Cover Letter Template
+A template folder can optionally include cover letter files. If present, the Resume Tailor will also generate a cover letter alongside the resume. The cover letter files must be called `cover_letter_template` and `cover_letter_required_fields` respectively.
+
+#### Cover Letter Template File
+This follows the same Jinja templating rules as the resume template file (including the custom delimiters for LaTeX). It defines the layout and structure of the cover letter.
+
+#### Cover Letter Required Fields File
+This follows the same rules as the resume required fields file:
+1. It is named `cover_letter_required_fields.py`
+2. It contains a Pydantic model called `RequiredFields`.
+
+The cover letter uses a separate prompt from the resume to select experience. See the [LLM Integration Documentation](LlmIntegration.md) for details on the prompts.
 
 ### Keeping the Output of a Template to One Page
 One feature you can use to improve the results of the Resume Tailor is called **Removable Experience**. Removable Experience is exactly what its name implies. It is something that can be removed from a resume without messing up the format. This is useful as sometimes the AI overselects experience, which then creates a multi-page resume. By having the AI rank each piece of Removable Experience for relevance to the job description, we can systematically remove bullet points until we get our one-page resume. To utilize Removable Experience we must include it in our data structure of both our template and `required_fields` files. Removable Experience uses a data structure with only two fields:
