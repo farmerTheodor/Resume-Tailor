@@ -206,6 +206,7 @@ experience/*
 !experience/work_experience_template.yaml
 
 resume_templates/*
+!resume_templates/test_format/
 !resume_templates/test_format/cover_letter_required_fields.py
 !resume_templates/test_format/cover_letter_template.tex
 !resume_templates/test_format/required_fields.py

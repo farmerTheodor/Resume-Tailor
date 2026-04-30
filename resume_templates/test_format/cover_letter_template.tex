@@ -1,0 +1,159 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  COVER LETTER STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+\null\vfill
+
+\begin{center}
+    \textbf{\Huge \scshape A. Toaster} \\ \vspace{1pt}
+    \small 555-000-0000 $|$ \href{mailto:atoaster@email.com}{\underline{atoaster@email.com}} $|$ 
+    \href{https://www.linkedin.com/}{\underline{linkedin.com/in/atoaster}} $|$
+    \href{https://github.com/}{\underline{github.com/atoaster}}
+\end{center}
+
+\vspace{2pt}
+\noindent\color{black}\rule{\textwidth}{0.4pt}
+\vspace{6pt}
+
+\noindent \today
+
+\vspace{6pt}
+
+% REPLACE ME WITH COMPANY NAME
+\noindent << company_name >>
+
+\vspace{4pt}
+\noindent \textbf{RE: << position_title >>}
+
+\vspace{2pt}
+\noindent\color{black}\rule{\textwidth}{0.4pt}
+\vspace{2pt}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{10pt}
+
+\noindent To whom it may concern,
+
+%%%%%%%% REPLACE ME WITH YOUR COVER LETTER CONTENT
+\noindent I'm a toaster with over six years of experience across sourdough, whole grain, rye, and artisan bread -- my scope tends to end up wider than my job title once I'm at the counter.
+
+\noindent At my last kitchen, I was brought on to handle standard white bread but kept picking up more. When an avocado toast project was stalling because the bread was coming out soggy, I identified the root cause immediately: under-calibrated heat and bread sliced too thick. I pushed for a protocol change. That decision kept the brunch service on schedule and led to a signature dish featured at a 2025 food expo. On that same project I built a quality framework for our toast program. After working through the research I found you could score toast with a second set of eyes, but only if the scoring rubric was calibrated against actual customer feedback. I collected 100 rated samples, tuned the rubric to match their preferences, and ended up with a quality process that correlated tightly with customer satisfaction. That framework is now a standard part of how the kitchen ships toast.
+
+\noindent Before that, at a high-volume caf\'{e}, I ran the toast station largely on my own. I developed a bread-tracking system from scratch because burnt orders kept reaching tables. After I implemented it, they stopped. I also worked out a way to run multiple bread varieties through a single toaster simultaneously without cross-contaminating flavours, which the equipment was not designed to support. The team eventually adopted it as standard practice.
+
+\noindent On the technical side, I work across most of the bread spectrum: sourdough, brioche, multigrain, gluten-free, and flatbreads. I hold a professional certification in artisan bread preparation. I've also worked with avocado, hummus, nut butters, seasonal preserves, and a lot of olive oil and flaky salt. Crusts stay on.
+
+\noindent I'm good at finding where the actual problem is, which is often different from where it appears to be. Finding fixes to solve the root cause to ensure things go smoothly. That's what I'd bring to this role.
+
+\vspace{2pt}
+\noindent\color{black}\rule{\textwidth}{0.4pt}
+\vspace{6pt}
+
+%%%%%%%% REPLACE ME WITH YOUR SIGNOFF
+\noindent Sincerely,
+\noindent A. Toaster
+
+\vfill\null
+
+%-------------------------------------------
+\end{document}
