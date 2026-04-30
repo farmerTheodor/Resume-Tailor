@@ -1,15 +1,15 @@
 import jinja2
 from pydantic import BaseModel
-from .template_loader import ResumeTemplate, TemplateTypes
+from .template_loader import Template, TemplateTypes, OutputFormatTypes
 
 
-def get_formatted_resume(
-    template_resume: ResumeTemplate,
+def get_formatted_output(
+    template: Template,
     required_fields: BaseModel,
 ) -> str:
 
     env = jinja2.Environment()
-    if template_resume.template_type == TemplateTypes.LATEX:
+    if template.output_format_type == OutputFormatTypes.LATEX:
         env = jinja2.Environment(
             block_start_string="<%",
             block_end_string="%>",
@@ -18,13 +18,13 @@ def get_formatted_resume(
             comment_start_string="<#",
             comment_end_string="#>",
         )
-    template: jinja2.Template = env.from_string(template_resume.template_content)
+    jinja_template: jinja2.Template = env.from_string(template.template_content)
 
     jinja_variables = _get_formatted_dict_for_jinja(required_fields)
-    if template_resume.template_type == TemplateTypes.LATEX:
+    if template.output_format_type == OutputFormatTypes.LATEX:
         jinja_variables = _escape_all_strings_latex(jinja_variables)
 
-    rendered_content = template.render(jinja_variables)
+    rendered_content = jinja_template.render(jinja_variables)
 
     return rendered_content
 

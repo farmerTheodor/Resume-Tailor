@@ -9,7 +9,7 @@ from test.util.llm_test_harness.custom_criteria import (
 )
 
 from src.experience import get_experience, select_experience
-from src.resume_output import ResumeTemplate, get_resume_template, TemplateTypes
+from src.template_output import Template, get_resume_template, TemplateTypes, OutputFormatTypes
 
 
 def test_select_experience_returns_valid_response():
@@ -27,7 +27,7 @@ def test_select_experience_returns_valid_response():
 
     selected_experience = select_experience(
         input_experience=input_experience,
-        resume_template=_get_dummy_resume_template(),
+        template=_get_dummy_resume_template(),
         job_description=job_description,
     )
 
@@ -45,7 +45,7 @@ def test_experience_selector_returns_valid_experience_when_simple_description():
 
     selected_experience = select_experience(
         input_experience=input_experience,
-        resume_template=_get_dummy_resume_template(),
+        template=_get_dummy_resume_template(),
         job_description=job_description,
     )
 
@@ -85,7 +85,7 @@ def test_experience_selector_returns_valid_experience_complex_description(
     )
     selected_experience = select_experience(
         input_experience=input_experience,
-        resume_template=resume_template,
+        template=resume_template,
         job_description=job_description,
     )
 
@@ -136,11 +136,13 @@ def _get_dummy_resume_template(
     template_path: str = "dummy_template",
     required_fields=_DummyOutputExperienceModel,
     template_content: str = "This is a dummy template",
-    template_type: TemplateTypes = TemplateTypes.LATEX,
-) -> ResumeTemplate:
-    return ResumeTemplate(
+    output_format_type: OutputFormatTypes = OutputFormatTypes.LATEX,
+    template_type: TemplateTypes = TemplateTypes.RESUME,
+) -> Template:
+    return Template(
         template_path=template_path,
         template_content=template_content,
         required_fields=required_fields,
+        output_format_type=output_format_type,
         template_type=template_type,
     )

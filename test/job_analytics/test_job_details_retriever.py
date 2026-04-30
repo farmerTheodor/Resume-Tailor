@@ -12,6 +12,9 @@ def test_get_job_details():
     expected_details = JobDetails(
         company_name="TechCorp",
         position="Software Engineer",
+        description="""
+    We are looking for a Software Engineer at TechCorp.
+    """,
     )
 
     retrieved_details = get_job_details(job_description)
