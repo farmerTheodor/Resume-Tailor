@@ -1,27 +1,26 @@
 import os
 from pathlib import Path
 import subprocess
-from .template_loader import ResumeTemplate, TemplateTypes
-
+from .template_loader import Template, TemplateTypes, OutputFormatTypes
 
 DEFAULT_OUTPUT_PATH = Path("/workspace/output/sharable_resumes")
 
 
-def compile_resume(
-    resume_template: ResumeTemplate,
+def compile_template(
+    template: Template,
     data: str,
     output_file_path: Path | str = DEFAULT_OUTPUT_PATH,
 ):
     if isinstance(output_file_path, str):
         output_file_path = Path(output_file_path)
 
-    if resume_template.template_type == TemplateTypes.LATEX:
-        compile_latex_resume(data, output_file_path)
+    if template.output_format_type == OutputFormatTypes.LATEX:
+        compile_latex_template(data, output_file_path)
     else:
-        raise ValueError(f"Unsupported resume format: {resume_template.template_type}")
+        raise ValueError(f"Unsupported resume format: {template.output_format_type}")
 
 
-def compile_latex_resume(data: str, output_file_path: Path | str):
+def compile_latex_template(data: str, output_file_path: Path | str):
     if isinstance(output_file_path, str):
         output_file_path = Path(output_file_path)
 

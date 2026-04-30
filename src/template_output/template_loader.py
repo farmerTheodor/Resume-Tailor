@@ -4,22 +4,28 @@ from pathlib import Path
 from pydantic import BaseModel
 
 
-class TemplateTypes(Enum):
+class OutputFormatTypes(Enum):
     LATEX = "tex"
 
 
-class ResumeTemplate(BaseModel):
+class TemplateTypes(Enum):
+    COVER_LETTER = "cover_letter"
+    RESUME = "resume"
+
+
+class Template(BaseModel):
     template_path: Path
     required_fields: type[BaseModel]
     template_content: str
+    output_format_type: OutputFormatTypes
     template_type: TemplateTypes
 
 
-def get_resume_template(format_folder_path: Path) -> ResumeTemplate:
+def get_resume_template(format_folder_path: Path) -> Template:
     template_path = _get_required_file_from_template_folder(
         format_folder_path, "template.*"
     )
-    template_type = TemplateTypes(template_path.suffix.lstrip("."))
+    template_type = OutputFormatTypes(template_path.suffix.lstrip("."))
     template_content = _load_template_content(template_path)
 
     required_fields_path = _get_required_file_from_template_folder(
@@ -27,11 +33,33 @@ def get_resume_template(format_folder_path: Path) -> ResumeTemplate:
     )
     required_fields = _load_expected_output_format(required_fields_path)
 
-    return ResumeTemplate(
+    return Template(
         template_path=template_path,
         required_fields=required_fields,
         template_content=template_content,
-        template_type=template_type,
+        output_format_type=template_type,
+        template_type=TemplateTypes.RESUME,
+    )
+
+
+def get_cover_letter_template(format_folder_path: Path) -> Template:
+    template_path = _get_required_file_from_template_folder(
+        format_folder_path, "cover_letter_template.*"
+    )
+    template_type = OutputFormatTypes(template_path.suffix.lstrip("."))
+    template_content = _load_template_content(template_path)
+
+    required_fields_path = _get_required_file_from_template_folder(
+        format_folder_path, "cover_letter_required_fields.py"
+    )
+    required_fields = _load_expected_output_format(required_fields_path)
+
+    return Template(
+        template_path=template_path,
+        required_fields=required_fields,
+        template_content=template_content,
+        output_format_type=template_type,
+        template_type=TemplateTypes.COVER_LETTER,
     )
 
 

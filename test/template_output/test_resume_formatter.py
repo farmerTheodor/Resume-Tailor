@@ -1,7 +1,7 @@
 import pytest
 from pathlib import Path
 
-from src.resume_output import get_formatted_resume, get_resume_template
+from src.template_output import get_formatted_output, get_resume_template
 
 from resume_templates.test_format.required_fields import (
     EducationItem,
@@ -20,8 +20,8 @@ def test_template_resume():
 
 
 def test_get_formatted_resume_with_valid_data(test_template_resume):
-    output = get_formatted_resume(
-        template_resume=test_template_resume,
+    output = get_formatted_output(
+        template=test_template_resume,
         required_fields=_get_dummy_required_fields(),
     )
 
@@ -53,8 +53,8 @@ def test_get_formatted_resume_with_unescaped_characters_for_latex_resume(
         skills=skills,
     )
 
-    output = get_formatted_resume(
-        template_resume=test_template_resume, required_fields=required_fields
+    output = get_formatted_output(
+        template=test_template_resume, required_fields=required_fields
     )
 
     assert "Developed using $, %, &, #, _, {, }, ~, ^, and \\." not in output

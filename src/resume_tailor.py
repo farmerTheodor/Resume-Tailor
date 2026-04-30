@@ -10,11 +10,12 @@ from src.experience import (
     remove_experience,
 )
 
-from src.resume_output import (
-    get_formatted_resume,
-    compile_latex_resume,
+from src.template_output import (
+    get_formatted_output,
+    compile_latex_template,
     get_resume_template,
-    ResumeTemplate,
+    get_cover_letter_template,
+    Template,
 )
 
 OUTPUT_PATH_ENV_VAR = "OUTPUT_PATH"
@@ -41,14 +42,19 @@ def get_default_compiled_output_path() -> Path:
 def tailor_resume_to_job_description(job_description: str, resume_format: Path):
     job_details = get_job_details(job_description)
 
-    resume_file_name = _get_resume_file_name(job_details)
+    generate_formatted_resume(resume_format, job_details)
+    generate_formatted_cover_letter(resume_format, job_details)
 
-    resume_template = get_resume_template(resume_format)
 
+
+def generate_formatted_resume(resume_format: Path, job_details: JobDetails):
     list_of_experience = get_experience()
+    resume_template = get_resume_template(resume_format)
     selected_experience = select_experience(
-        list_of_experience, resume_template, job_description
+        list_of_experience, resume_template, job_details.description
     )
+
+    resume_file_name = _get_resume_file_name(job_details)
     formatted_resume_path = (
         get_default_formatted_output_path() / f"{resume_file_name}.tex"
     )
@@ -56,7 +62,7 @@ def tailor_resume_to_job_description(job_description: str, resume_format: Path):
         get_default_compiled_output_path() / f"{resume_file_name}.pdf"
     )
 
-    save_and_compile_resume(
+    save_and_compile_template(
         resume_template,
         selected_experience,
         formatted_resume_path,
@@ -73,7 +79,7 @@ def tailor_resume_to_job_description(job_description: str, resume_format: Path):
             selected_experience, experience_to_remove
         )
 
-        save_and_compile_resume(
+        save_and_compile_template(
             resume_template,
             selected_experience,
             formatted_resume_path,
@@ -81,22 +87,48 @@ def tailor_resume_to_job_description(job_description: str, resume_format: Path):
         )
 
 
-def save_and_compile_resume(
-    resume_template: ResumeTemplate,
-    selected_experience,
-    formatted_resume_path: Path,
-    compiled_resume_path: Path,
-) -> Path:
-    formatted_resume = get_formatted_resume(resume_template, selected_experience)
+def generate_formatted_cover_letter(resume_format: Path, job_details: JobDetails):
+    try:
+        cover_letter_template = get_cover_letter_template(resume_format)
+    except FileNotFoundError:
+        # If cover letter template or required fields file is not found, we skip cover letter generation
+        return
+    # Dont pass in experience for cover letter at the moment. We currently only change based on job details.
+    selected_experience = select_experience(
+        [job_details], cover_letter_template, job_details.description
+    )
 
-    with open(formatted_resume_path, "w") as f:
+    cover_letter_file_name = _get_cover_letter_file_name(job_details)
+    formatted_cover_letter_path = (
+        get_default_formatted_output_path() / f"{cover_letter_file_name}.tex"
+    )
+    compiled_cover_letter_path = (
+        get_default_compiled_output_path() / f"{cover_letter_file_name}.pdf"
+    )
+    save_and_compile_template(
+        cover_letter_template,
+        selected_experience,
+        formatted_cover_letter_path,
+        compiled_cover_letter_path,
+    )
+
+
+def save_and_compile_template(
+    template: Template,
+    selected_experience,
+    formatted_output_path: Path,
+    compiled_output_path: Path,
+) -> Path:
+    formatted_resume = get_formatted_output(template, selected_experience)
+
+    with open(formatted_output_path, "w") as f:
         f.write(formatted_resume)
 
-    compile_latex_resume(formatted_resume, compiled_resume_path)
+    compile_latex_template(formatted_resume, compiled_output_path)
 
 
-def _check_number_of_pages(compiled_resume_path: Path) -> int:
-    doc = pymupdf.open(compiled_resume_path)
+def _check_number_of_pages(compiled_output_path: Path) -> int:
+    doc = pymupdf.open(compiled_output_path)
     num_pages = doc.page_count
     doc.close()
 
@@ -112,6 +144,17 @@ def _get_resume_file_name(job_details: JobDetails) -> str:
     )
 
     return f"{formatted_position}_for_{formatted_company_name}"
+
+
+def _get_cover_letter_file_name(job_details: JobDetails) -> str:
+    formatted_position = (
+        job_details.position.replace(" ", "_").replace("/", "_").lower()
+    )
+    formatted_company_name = (
+        job_details.company_name.replace(" ", "_").replace("/", "_").lower()
+    )
+
+    return f"cover_letter_for_{formatted_position}_at_{formatted_company_name}"
 
 
 if __name__ == "__main__":

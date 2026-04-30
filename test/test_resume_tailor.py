@@ -50,8 +50,8 @@ def test_resume_tailor(experience_path: Path, output_path: Path, resume_format: 
     """
 
     tailor_resume_to_job_description(sample_job_description, resume_format)
-    assert any(get_default_formatted_output_path().glob("*.tex"))
-    assert any(get_default_compiled_output_path().glob("*.pdf"))
+    assert len(list(get_default_formatted_output_path().glob("*.tex"))) == 2
+    assert len(list(get_default_compiled_output_path().glob("*.pdf"))) == 2
 
 
 def test_resume_tailor_keeps_things_to_one_page(
@@ -69,7 +69,10 @@ def test_resume_tailor_keeps_things_to_one_page(
     """
 
     tailor_resume_to_job_description(sample_job_description, resume_format)
-    compiled_resume_path = next(get_default_compiled_output_path().glob("*.pdf"))
+    pdf_files = list(get_default_compiled_output_path().glob("*.pdf"))
+    compiled_resume_path = [
+        pdf for pdf in pdf_files if "cover_letter" not in pdf.stem
+    ].pop()
     num_pages = _check_number_of_pages(compiled_resume_path)
 
     assert num_pages == 1
@@ -78,5 +81,6 @@ def test_resume_tailor_keeps_things_to_one_page(
 def _check_number_of_pages(compiled_resume_path: Path) -> int:
     doc = pymupdf.open(compiled_resume_path)
     num_pages = doc.page_count
+    doc.close()
 
     return num_pages
