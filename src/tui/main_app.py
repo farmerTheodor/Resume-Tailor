@@ -75,13 +75,18 @@ class ResumeTailor(App):
     ) -> None:
         try:
             self.notify("generating resume...")
-            tailor_resume_to_job_description(job_description, resume_template)
+            job_details = tailor_resume_to_job_description(
+                job_description, resume_template
+            )
             self.notify(
-                "Resume generated successfully!\n Check /workspace/output/sharable_resumes for the output."
+                f"Resume for {job_details.position} at {job_details.company_name} generated successfully!\n Check /workspace/output/sharable_resumes for the output."
             )
 
-        except Exception:
-            self.notify("Error generating resume")
+        except Exception as e:
+            self.notify(
+                f"Error generating resume {e.__class__.__name__}: {str(e)}",
+                severity="error",
+            )
 
     def on_worker_state_changed(self, event: Worker.StateChanged) -> None:
         if event.worker.group == "resume_generation":

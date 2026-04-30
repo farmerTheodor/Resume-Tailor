@@ -39,12 +39,15 @@ def get_default_compiled_output_path() -> Path:
     return compiled_path
 
 
-def tailor_resume_to_job_description(job_description: str, resume_format: Path):
+def tailor_resume_to_job_description(
+    job_description: str, resume_format: Path
+) -> JobDetails:
     job_details = get_job_details(job_description)
 
     generate_formatted_resume(resume_format, job_details)
     generate_formatted_cover_letter(resume_format, job_details)
 
+    return job_details
 
 
 def generate_formatted_resume(resume_format: Path, job_details: JobDetails):
