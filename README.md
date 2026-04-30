@@ -37,7 +37,7 @@ This project currently recommends using [Docker](https://www.docker.com/get-star
     - The latex version is located in `output/formatted_resumes`
     - The pdf version is located in `output/sharable_resumes`
 8. Once you have confirmed that everything works, start adding in your experience within the `experience` folder. Use the [documentation](documentation/Experience.md) and experience templates already in there to get you started.
-9. ***(optional)*** Create a resume template of your own by following the instructions [here](documentation/ResumeTemplate.md).
+9. ***(optional)*** Create a resume template of your own by following the instructions [here](documentation/Template.md).
 10. ***(optional)*** If you are not quite happy with the output and want to make a few tweaks without rerunning everything. You can do this by editing the latex output. Then running the command `compile_latex_file <full path to latex file>` in the terminal. If you want to change the [LLM output](documentation/LlmIntegration.md) here is the documentation for that
 
 ---
